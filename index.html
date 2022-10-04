@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://itproger.com/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<title>Портфолио</title>
+</head>
+<body>
+    <style>
+        @charset "utf-8";
+
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,500,700&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            outline: none;
+        }
+
+        body {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 1rem;
+        }
+
+        @media(min-width: 1700px) {
+          body {
+            font-size: 1.2rem;
+          }
+        }
+
+        .heading  {
+          font-weight: 700;
+          line-height: 1.1;
+          color: #635C73;
+          margin: 0.67em 0;
+          font-size: 41px;
+        }
+
+        h3.heading {font-size: 28px;font-weight: 500}
+
+        .panel {
+          text-align:center;
+          border: 1px solid gainsboro;
+          margin: 7% auto;
+          background-color: #f6f5f5;
+          padding: 5%;
+        }
+
+        @media (min-width: 1451px) {
+          .panel {
+            width: 50%;
+          }
+        }
+
+        @media (max-width: 1450px) and (min-width: 1160px) {
+          .panel {
+            width: 60%;
+          }
+        }
+
+        @media (max-width: 1159px) and (min-width: 850px) {
+          .panel {
+            width: 80%;
+          }
+        }
+
+        @media (max-width: 849px) {
+          .panel {
+            width: 90%;
+          }
+        }
+
+        p {
+          font-size:1.2em;
+          color: #555555;
+        }
+
+        p a {
+          color: #d46161;
+          text-decoration: none;
+        }
+
+        ol {color: #566473; font-weight: bold}
+        ul {list-style: none;color: #555555;}
+
+        ol a {
+            position: relative;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-shadow: 0 0 1px rgba(255,255,255,0.3);
+        }
+        
+        ul a {
+            text-decoration="none";
+            color: black;
+	    }
+        
+        ol a:hover,
+        ol a:focus {
+            outline: none;
+          text-decoration: none;
+        }
+
+        ol li {margin-bottom: 20px}
+
+        .portfolio img {
+          width: 80%;
+          border: 2px solid silver;
+          border-radius: 50%;
+          background: #fff;
+        }
+
+        @media(max-width: 767px) {
+          .portfolio img {
+            width: 60%;
+            margin-bottom: 20px;
+          }
+
+          .left-text {text-align: left}
+        }
+
+        .cl-effect-7 a {
+            padding: 12px 10px 10px;
+            color: #566473;
+            text-shadow: none;
+            font-weight: 700;
+        }
+
+        .cl-effect-7 a::before,
+        .cl-effect-7 a::after {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: #566473;
+            content: '';
+            -webkit-transition: -webkit-transform 0.3s;
+            -moz-transition: -moz-transform 0.3s;
+            transition: transform 0.3s;
+            -webkit-transform: scale(0.85);
+            -moz-transform: scale(0.85);
+            transform: scale(0.85);
+        }
+
+        .cl-effect-7 a::after {
+            opacity: 0;
+            -webkit-transition: top 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+            -moz-transition: top 0.3s, opacity 0.3s, -moz-transform 0.3s;
+            transition: top 0.3s, opacity 0.3s, transform 0.3s;
+        }
+
+        .cl-effect-7 a:hover::before,
+        .cl-effect-7 a:hover::after,
+        .cl-effect-7 a:focus::before,
+        .cl-effect-7 a:focus::after {
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            transform: scale(1);
+        }
+
+        .cl-effect-7 a:hover::after,
+        .cl-effect-7 a:focus::after {
+            top: 0%;
+            opacity: 1;
+        }
+    </style>
+    
+	<div class="panel">
+		<h1 class="heading">Портфолио</h1>
+		<h3 class="heading">Абышов Нияз Биньятович</h3>
+			<p>Учусь на высшем образовании по специальности "Информатика и вычислительная техника". Владею алгаритмизацией и ООП, освоил такие технологии, как ASP.NET, WinForms и WPF, а также соблюдаю в них принципы Solid. Освоил систему управления версиями Git. Владею языками разметки HTML5 и каскадных таблиц стилей CSS, а также такими языками программирования, как C++, C#, частично Python.</p>
+		<ul class="text-left">
+		  <li><b>Телефон:</b> +7(987) 183 - 59 - 19</li>
+		  <li><b>Email:</b> abyshov1862@mail.ru</li>
+		  <li><a href="https://itproger.com/view-diplom/1bf937ec9b7e634d3649179d50f95165/csharp" style="color: #555555"><b>Диплом</b></a></li>
+		</ul>
+
+	    <div class="row portfolio">
+	      <div class="col-md-6">
+	        <img src="https://itproger.com/img/userAnketa.png" alt="Фото">
+	      </div>
+	      <div class="col-md-6">
+	        <p class="left-text">Некоторые из моих проектов:</p>
+	        <ol class="text-left cl-effect-7">
+<!--
+	Здесь нет ссылок на сами проекты, так как вы можете выбрать самостоятельно какие проекты вы бы хотели добавить в портфолио. 
+	Добавьте новые страницы с этими проектами и далее впишите ниже ссылки на них.
+	
+	PS: можете не выгружать ваши проекты в Интернет, а лишь сделать скриншоты и далее добавить эти фото сюда на страницу.
+ -->
+	          <li><a href="wpf_images/Diplom.png" title="Посетить сайт">Дипломная работа</a></li>
+	          <li><a href="wpf_images/WinForms.png" title="Посетить сайт">WinForms проект</a></li>
+	          <li><a href="wpf_images/WPF.png" title="Посетить сайт">WPF приложение</a></li>
+	        </ol>
+	      </div>
+	    </div>
+
+	</div>
+</body>
+</html>
